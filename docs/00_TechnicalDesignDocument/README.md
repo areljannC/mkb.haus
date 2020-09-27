@@ -51,6 +51,12 @@ For those who are trying to build their first custom mechanical keyboard, they h
 
 ### Non-Goals
 
+Here are some things that this platform will not be focusing on:
+
+- full-fledged eCommerce platform
+- advertisement
+- revenue
+
 ---
 
 ## Product Requirements
