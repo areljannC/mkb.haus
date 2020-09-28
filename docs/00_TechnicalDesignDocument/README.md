@@ -13,7 +13,8 @@
 2. [Product Requirements](#product-requirements)
 3. [Technical Requirements](#technical-requirements)
 4. [Technical Design](#technical-design)
-5. [Testing](#testing)
+5. [User Interface](#user-interface)
+6. [Testing](#testing)
 
 ---
 
@@ -61,7 +62,7 @@ Here are some things that this platform will not be focusing on:
 
 ## Product Requirements
 
-*(These requirements will have more information in the future and will be moved to its own document.)*
+*These requirements will have more information in the future and will be moved to its own document.*
 
 - User sign-up and sign-in
 - User profile onboarding
@@ -113,18 +114,18 @@ Here are some things that this platform will not be focusing on:
 
 ## Technical Design
 
-*(None for now; expect this section to only provide a summary because the in-depth technical design will be moved to its own document.)*
+*None for now; expect this section to only provide a summary because the in-depth technical design will be moved to its own document.*
 
 ---
 
 ## User Interface
 
-*(None for now; expect this section to only provide a summary because the in-depth user interface diagrams will be moved to its own document.)*
+*None for now; expect this section to only provide a summary because the in-depth user interface diagrams will be moved to its own document.*
 
 ---
 
 ## Testing
 
-*(None for now; expect this section to only provide a summary because the in-depth testing will be moved to its own document.)*
+*None for now; expect this section to only provide a summary because the in-depth testing will be moved to its own document.*
 
 ---
