@@ -61,16 +61,70 @@ Here are some things that this platform will not be focusing on:
 
 ## Product Requirements
 
+*(These requirements will have more information in the future and will be moved to its own document.)*
+
+- User sign-up and sign-in
+- User profile onboarding
+- CMKB build creation
+- CMKB build like, favourite and share functionalities
+- Home page like [reddit.com](https://reddit.com) feed showcasing user builds
+    - Hot
+    - Trending
+    - Top by date range
+- CMKB build inspection
+
 ---
 
 ## Technical Requirements
+
+### Platforms
+
+- Web app
+- PWA
+
+### Hosting
+
+- Heroku
+- AWS S3
+- GitHub
+
+### Front-End
+
+- Next.js
+- React.js
+- Redux
+- TypeScript
+
+### Back-End
+
+- Node.js
+- Express
+- Redis
+
+### Database
+
+- PostgreSQL
+
+### Authentication
+
+- Firebase Authentication
 
 ---
 
 ## Technical Design
 
+*(None for now; expect this section to only provide a summary because the in-depth technical design will be moved to its own document.)*
+
+---
+
+## User Interface
+
+*(None for now; expect this section to only provide a summary because the in-depth user interface diagrams will be moved to its own document.)*
+
 ---
 
 ## Testing
+
+*(None for now; expect this section to only provide a summary because the in-depth testing will be moved to its own document.)*
 
 ---
