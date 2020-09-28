@@ -61,6 +61,6 @@ Similar to [abletonthemes.com](https://www.abletonthemes.com/), we should allow 
 
 ### Home Page
 
-[reddit.com](https://reddit.com) and [abletonthemes.com](https://www.abletonthemes.com/) have great home pages that allow new users to view popular and trending content. This web app should be able to do this so we can have more users that want to participate in the community,
+[reddit.com](https://reddit.com) and [abletonthemes.com](https://www.abletonthemes.com/) have great home pages that allow new users to view popular and trending content. This web app should be able to do this so we can have more users that want to participate in the community.
 
 ---
