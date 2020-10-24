@@ -1,4 +1,4 @@
-# Technical Design Document
+# System Design Document
 
 **Author**: AJ Clemente <areljann.c@gmail.com>
 
