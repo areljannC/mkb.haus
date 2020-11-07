@@ -5,6 +5,7 @@
 ---
 
 ## Table of Contents
+
 1. [Client](#client)
 2. [Server](#server)
 3. [Database](#database)

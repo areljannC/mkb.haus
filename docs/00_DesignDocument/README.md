@@ -1,20 +1,31 @@
-# System Design Document
+# Design Document
 
 **Author**: AJ Clemente <areljann.c@gmail.com>
 
 ---
 
 ## Table of Contents
-1. [Introduction](#introduction)
-    1. [Rationale](#rationale)
-    2. [Background](#background)
-    3. [Terminology](#terminology)
-    4. [Non-Goals](#non-goals)
-2. [Product Requirements](#product-requirements)
-3. [Technical Requirements](#technical-requirements)
-4. [Technical Design](#technical-design)
-5. [User Interface](#user-interface)
-6. [Testing](#testing)
+
+- [Design Document](#design-document)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+    - [Rationale](#rationale)
+      - [What are you trying to accomplish?](#what-are-you-trying-to-accomplish)
+      - [What's wrong with things the way they are now?](#whats-wrong-with-things-the-way-they-are-now)
+    - [Background](#background)
+    - [Terminology](#terminology)
+    - [Non-Goals](#non-goals)
+  - [Product Requirements](#product-requirements)
+  - [Technical Requirements](#technical-requirements)
+    - [Platforms](#platforms)
+    - [Hosting](#hosting)
+    - [Front-End](#front-end)
+    - [Back-End](#back-end)
+    - [Database](#database)
+    - [Authentication](#authentication)
+  - [Technical Design](#technical-design)
+  - [User Interface](#user-interface)
+  - [Testing](#testing)
 
 ---
 
@@ -28,7 +39,7 @@
 - [pcpartpicker.com](https://pcpartpicker.com) but for mechanical keyboards
 - mechanical keyboard market for users to buy, sell and trade from each other
 - easily lookup a mechanical keyboard's specifications from its switches, to case, to keycaps, etc.
-- easily find which vendor sells those said specfication items
+- easily find which vendor sells those said specification items
 
 #### What's wrong with things the way they are now?
 
@@ -67,11 +78,11 @@ Here are some things that this platform will not be focusing on:
 - User sign-up and sign-in
 - User profile onboarding
 - CMKB build creation
-- CMKB build like, favourite and share functionalities
+- CMKB build like, favorite and share functionalities
 - Home page like [reddit.com](https://reddit.com) feed showcasing user builds
-    - Hot
-    - Trending
-    - Top by date range
+  - Hot
+  - Trending
+  - Top by date range
 - CMKB build inspection
 
 ---
