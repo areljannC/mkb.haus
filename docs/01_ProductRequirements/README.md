@@ -58,7 +58,7 @@ Allow the user to view and inspect a build. [pcpartpicker.com](https://pcpartpic
 
 ### Build Social System
 
-Similar to [abletonthemes.com](https://www.abletonthemes.com/), we should allow the user to **like** and **favourite** builds. This encourages community building and user spotlights in the web app.
+Similar to [abletonthemes.com](https://www.abletonthemes.com/), we should allow the user to **like** and **favorite** builds. This encourages community building and user spotlights in the web app.
 
 ### Home Page
 

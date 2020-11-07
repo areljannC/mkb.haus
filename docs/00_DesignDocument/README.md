@@ -16,13 +16,6 @@
     - [Terminology](#terminology)
     - [Non-Goals](#non-goals)
   - [Product Requirements](#product-requirements)
-  - [Technical Requirements](#technical-requirements)
-    - [Platforms](#platforms)
-    - [Hosting](#hosting)
-    - [Front-End](#front-end)
-    - [Back-End](#back-end)
-    - [Database](#database)
-    - [Authentication](#authentication)
   - [Technical Design](#technical-design)
   - [User Interface](#user-interface)
   - [Testing](#testing)
@@ -75,57 +68,11 @@ Here are some things that this platform will not be focusing on:
 
 *These requirements will have more information in the future and will be moved to its own document.*
 
-- User sign-up and sign-in
-- User profile onboarding
-- CMKB build creation
-- CMKB build like, favorite and share functionalities
-- Home page like [reddit.com](https://reddit.com) feed showcasing user builds
-  - Hot
-  - Trending
-  - Top by date range
-- CMKB build inspection
-
----
-
-## Technical Requirements
-
-### Platforms
-
-- Web app
-- PWA
-
-### Hosting
-
-- Heroku
-- AWS S3
-- GitHub
-
-### Front-End
-
-- Next.js
-- React.js
-- Redux
-- TypeScript
-
-### Back-End
-
-- Node.js
-- Express
-- Redis
-
-### Database
-
-- PostgreSQL
-
-### Authentication
-
-- Firebase Authentication
-
 ---
 
 ## Technical Design
 
-*None for now; expect this section to only provide a summary because the in-depth technical design will be moved to its own document.*
+*These requirements will have more information in the future and will be moved to its own document.*
 
 ---
 
