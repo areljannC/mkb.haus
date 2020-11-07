@@ -6,19 +6,15 @@
 
 ## Table of Contents
 
-- [Design Document](#design-document)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-    - [Rationale](#rationale)
-      - [What are you trying to accomplish?](#what-are-you-trying-to-accomplish)
-      - [What's wrong with things the way they are now?](#whats-wrong-with-things-the-way-they-are-now)
-    - [Background](#background)
-    - [Terminology](#terminology)
-    - [Non-Goals](#non-goals)
-  - [Product Requirements](#product-requirements)
-  - [Technical Design](#technical-design)
-  - [User Interface](#user-interface)
-  - [Testing](#testing)
+1. [Introduction](#introduction)
+    1. [Rationale](#rationale)
+    2. [Background](#background)
+    3. [Terminology](#terminology)
+    4. [Non-Goals](#non-goals)
+2. [Product Requirements](#product-requirements)
+3. [Technical Requirements](#technical-requirements)
+4. [User Interface](#user-interface)
+5. [Testing](#testing)
 
 ---
 
@@ -70,7 +66,7 @@ Here are some things that this platform will not be focusing on:
 
 ---
 
-## Technical Design
+## Technical Requirements
 
 *These requirements will have more information in the future and will be moved to its own document.*
 

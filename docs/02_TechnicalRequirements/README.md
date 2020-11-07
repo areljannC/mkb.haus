@@ -1,4 +1,4 @@
-# Technical Design Document
+# Technical Requirements Document
 
 **Author**: AJ Clemente <areljann.c@gmail.com>
 
@@ -6,11 +6,11 @@
 
 ## Table of Contents
 
-1. [Hosting](#hosting)
-2. [Front-End](#front-end)
-3. [Back-End](#back-end)
-4. [Database](#database)
-5. [Authentication](#authentication)
+- [Hosting](#hosting)
+- [Front-End](#front-end)
+- [Back-End](#back-end)
+- [Database](#database)
+- [Authentication](#authentication)
 
 ---
 
