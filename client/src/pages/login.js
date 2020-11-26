@@ -1,15 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
+import { LoginPage } from '../containers'
 
 const Login = () => (
-  <>
-    <Head>
-      <title>Login</title>
-    </Head>
-    <div>
-      login page
-    </div>
-  </>
+  <LoginPage />
 )
 
 export default Login
