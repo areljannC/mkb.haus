@@ -1,14 +1,8 @@
-import Head from 'next/head'
+import React from 'react'
+import { HomePage } from '../containers'
 
-const HomePage = () => (
-  <>
-    <Head>
-      <title>mkb.haus</title>
-    </Head>
-    <div>
-      hello
-    </div>
-  </>
+const Home = () => (
+  <HomePage />
 )
 
-export default HomePage
+export default Home
