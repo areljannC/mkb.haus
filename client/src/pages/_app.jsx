@@ -3,6 +3,17 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import reset from 'styled-reset'
 import { theme } from '../shared/constants'
 
+// Component
+const App = ({ Component, pageProps }) => (
+  <Fragment>
+    <GlobalStyle />
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+  </Fragment>
+)
+
+// Styles
 const GlobalStyle = createGlobalStyle`
   ${reset}
 
@@ -20,13 +31,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const App = ({ Component, pageProps }) => (
-  <Fragment>
-    <GlobalStyle />
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
-  </Fragment>
-)
+// Display Names
+App.displayName = `App`
 
 export default App
