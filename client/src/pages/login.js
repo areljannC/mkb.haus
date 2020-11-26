@@ -1,6 +1,7 @@
+import React from 'react'
 import Head from 'next/head'
 
-const LoginPage = () => (
+const Login = () => (
   <>
     <Head>
       <title>Login</title>
@@ -11,4 +12,4 @@ const LoginPage = () => (
   </>
 )
 
-export default LoginPage
+export default Login
