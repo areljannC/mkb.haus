@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { FC } from 'react'
 import { LoginPage } from '../containers'
 
 // Component
-const Login = () => (
+const Login: FC = () => (
   <LoginPage />
 )
 

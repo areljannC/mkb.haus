@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
 import styled from 'styled-components'
 import { FOOTER_HEIGHT } from '../../constants'
 
 // Component
-const Footer = () => (
+const Footer: FC = () => (
   <FooterWrapper>
     <p>this is the footer</p>
   </FooterWrapper>
