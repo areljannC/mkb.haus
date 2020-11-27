@@ -3,21 +3,21 @@ import styled from 'styled-components'
 import { Header, Main, Footer } from './components'
 
 // Types
-type Props = {
+type LayoutProps = {
   children?: ReactNode
   showHeader?: boolean
   showFooter?: boolean
 }
 
 // Component
-const Layout: FC = ({
+const Layout: FC<LayoutProps> = ({
   children,
   showHeader = true,
   showFooter = true
-}: Props) => (
+}: LayoutProps) => (
   <LayoutWrapper>
     {showHeader && <Header />}
-    <Main>{children}</Main>
+    <Main showHeader={showHeader} showFooter={showFooter}>{children}</Main>
     {showFooter && <Footer />}
   </LayoutWrapper>
 )

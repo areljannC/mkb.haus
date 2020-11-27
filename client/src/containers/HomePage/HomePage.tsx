@@ -10,7 +10,7 @@ const HomePage: FC = () => (
     <Head>
       <title>mkb.haus</title>
     </Head>
-    <Layout>
+    <Layout showHeader={false} showFooter={false}>
       <HomePageWrapper>
         <p>
           this is the home page. <br />
