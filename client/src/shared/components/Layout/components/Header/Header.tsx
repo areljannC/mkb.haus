@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { FC } from 'react'
 import styled from 'styled-components'
 import { HEADER_HEIGHT } from '../../constants'
 
 // Component
-const Header = () => (
+const Header: FC = () => (
   <HeaderWrapper>
     <p>this is the header</p>
   </HeaderWrapper>

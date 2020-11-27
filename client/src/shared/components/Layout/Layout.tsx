@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { ReactNode, FC } from 'react'
 import styled from 'styled-components'
 import { Header, Main, Footer } from './components'
 
+// Types
+type Props = {
+  children?: ReactNode
+  showHeader?: boolean
+  showFooter?: boolean
+}
+
 // Component
-const Layout = ({ children }) => (
+const Layout: FC = ({
+  children,
+  showHeader = true,
+  showFooter = true
+}: Props) => (
   <LayoutWrapper>
-    <Header/>
+    {showHeader && <Header />}
     <Main>{children}</Main>
-    <Footer />
+    {showFooter && <Footer />}
   </LayoutWrapper>
 )
 

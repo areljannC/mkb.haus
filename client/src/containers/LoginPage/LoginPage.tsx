@@ -1,28 +1,28 @@
-import React, { Fragment } from 'react'
+import React, { FC, Fragment } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styled from 'styled-components'
 import { Layout } from '../../shared/components'
 
 // Component
-const HomePage = () => (
+const LoginPage: FC = () => (
   <Fragment>
     <Head>
-      <title>mkb.haus</title>
+      <title>Login to mkb.haus</title>
     </Head>
     <Layout>
-      <HomePageWrapper>
+      <LoginPageWrapper>
         <p>
-          this is the home page. <br />
-          login <Link href='/login'>here</Link>.
+          this is the login page. <br />
+          home <Link href='/'>here</Link>.
         </p>
-      </HomePageWrapper>
+      </LoginPageWrapper>
     </Layout>
   </Fragment>
 )
 
 // Styles
-const HomePageWrapper = styled.div`
+const LoginPageWrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
@@ -33,7 +33,7 @@ const HomePageWrapper = styled.div`
 `
 
 // Display Names
-HomePage.displayName = `HomePage`
-HomePageWrapper.displayName = `HomePageWrapper`
+LoginPage.displayName = `LoginPage`
+LoginPageWrapper.displayName = `LoginPageWrapper`
 
-export default HomePage
+export default LoginPage
