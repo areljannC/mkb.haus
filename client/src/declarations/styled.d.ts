@@ -10,12 +10,12 @@ declare module 'styled-components' {
       monospace: string
     }
 
-    fontSizes: number[]
+    fontSizes: string[]
 
     fontWeights: {
-      body: string
-      heading: string
-      bold: string
+      body: number
+      heading: number
+      bold: number
     }
 
     lineHeights: {

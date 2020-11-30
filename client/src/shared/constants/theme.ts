@@ -1,11 +1,11 @@
-const heading: object = {
+const heading = {
   color: 'text',
   fontFamily: 'heading',
   lineHeight: 'heading',
   fontWeight: 'heading'
 }
 
-const fontSizes: string[] = [
+const fontSizes = [
   '12px',
   '14px',
   '16px',
@@ -17,7 +17,7 @@ const fontSizes: string[] = [
   '96px'
 ]
 
-export const base: object = {
+const theme = {
   space: [
     '0px',
     '4px',
@@ -43,13 +43,6 @@ export const base: object = {
   lineHeights: {
     body: '1.5rem',
     heading: '1.125rem'
-  },
-  colors: {
-    text: '#000',
-    background: '#fff',
-    primary: '#07c',
-    secondary: '#30c',
-    muted: '#f6f6f6'
   },
   styles: {
     root: {
@@ -117,11 +110,7 @@ export const base: object = {
     img: {
       maxWidth: '100%'
     }
-  }
-}
-
-const theme = {
-  ...base,
+  },
   colors: {
     text: '#454f5b',
     background: '#fff',
