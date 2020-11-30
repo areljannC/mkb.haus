@@ -59,7 +59,7 @@ export const base: object = {
     },
     h1: {
       ...heading,
-      fontSize: fontSizes[5]
+      fontSize: fontSizes[6]
     },
     h2: {
       ...heading,
