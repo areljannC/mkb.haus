@@ -14,7 +14,7 @@ const HomePage: FC = () => (
       <HomePageWrapper>
         <Title>mkb.haus</Title>
         <Subtitle>
-          A social network for mechanical keyboard enthusiasts.
+          A social network for mechanical keyboard enthusiasts coming soon.
         </Subtitle>
       </HomePageWrapper>
     </Layout>
@@ -36,12 +36,14 @@ const Title = styled.h1`
   color: ${(props) => props.theme.colors.text};
   font-size: ${(props) => props.theme.styles.h1.fontSize};
   font-weight: ${(props) => props.theme.styles.h1.fontSize};
+  margin-bottom: ${(props) => props.theme.space[3]};
 `
 
 const Subtitle = styled.h2`
   color: ${(props) => props.theme.colors.text};
   font-size: ${(props) => props.theme.styles.h2.fontSize};
   font-weight: ${(props) => props.theme.styles.h2.fontSize};
+  text-align: center;
 `
 
 // Display Names

@@ -1,14 +1,9 @@
-import React, { FC, useEffect } from 'react'
-// import { LoginPage } from '../containers'
+import { FC, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { pageRoutes } from '../shared/constants'
 
 // Component
-// const Login: FC = () => (
-//   <LoginPage />
-// )
-
-const Login: FC = () => {
+const PageNotFound: FC = () => {
   const router = useRouter()
 
   useEffect(() => {
@@ -19,6 +14,6 @@ const Login: FC = () => {
 }
 
 // Display Names
-Login.displayName = `Login`
+PageNotFound.displayName = `PageNotFound`
 
-export default Login
+export default PageNotFound
