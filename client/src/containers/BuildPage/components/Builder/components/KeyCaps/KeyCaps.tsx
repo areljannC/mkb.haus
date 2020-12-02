@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { FC, useState, memo } from 'react'
 import styled from 'styled-components'
 
 // Types
@@ -59,4 +59,4 @@ const KeyCapsWrapper = styled.div`
 KeyCaps.displayName = `KeyCaps`
 KeyCapsWrapper.displayName = `KeyCapsWrapper`
 
-export default KeyCaps
+export default memo(KeyCaps)

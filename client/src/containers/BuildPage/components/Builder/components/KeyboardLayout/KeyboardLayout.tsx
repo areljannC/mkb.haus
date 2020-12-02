@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { FC, useState, memo } from 'react'
 import styled from 'styled-components'
 
 // Types
@@ -85,4 +85,4 @@ const KeyboardLayoutWrapper = styled.div`
 KeyboardLayout.displayName = `KeyboardLayout`
 KeyboardLayoutWrapper.displayName = `KeyboardLayoutWrapper`
 
-export default KeyboardLayout
+export default memo(KeyboardLayout)

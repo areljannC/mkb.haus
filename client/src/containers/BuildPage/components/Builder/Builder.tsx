@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, memo } from 'react'
 import styled from 'styled-components'
 import { KeySwitches, KeyCaps, KeyboardLayout, PCBs } from './components'
 
@@ -27,4 +27,4 @@ const BuilderWrapper = styled.div`
 Builder.displayName = `Builder`
 BuilderWrapper.displayName = `BuilderWrapper`
 
-export default Builder
+export default memo(Builder)

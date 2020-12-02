@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { FC, useState, memo } from 'react'
 import styled from 'styled-components'
 
 // Types
@@ -89,4 +89,4 @@ const KeySwitchesWrapper = styled.div`
 KeySwitches.displayName = `KeySwitches`
 KeySwitchesWrapper.displayName = `KeySwitchesWrapper`
 
-export default KeySwitches
+export default memo(KeySwitches)

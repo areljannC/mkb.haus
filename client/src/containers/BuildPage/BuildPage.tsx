@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react'
+import React, { FC, Fragment, memo } from 'react'
 import Head from 'next/head'
 import styled from 'styled-components'
 import { Layout } from '../../shared/components'
@@ -52,4 +52,4 @@ const Subtitle = styled.h2`
 BuildPage.displayName = `BuildPage`
 BuildPageWrapper.displayName = `BuildPageWrapper`
 
-export default BuildPage
+export default memo(BuildPage)

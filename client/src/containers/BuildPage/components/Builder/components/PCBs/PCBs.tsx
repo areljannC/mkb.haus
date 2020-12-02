@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { FC, useState, memo } from 'react'
 import styled from 'styled-components'
 
 // Types
@@ -65,4 +65,4 @@ const PCBsWrapper = styled.div`
 PCBs.displayName = `PCBs`
 PCBsWrapper.displayName = `PCBsWrapper`
 
-export default PCBs
+export default memo(PCBs)
