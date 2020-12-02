@@ -1,6 +1,5 @@
-import React, { FC, Fragment } from 'react'
+import React, { FC, Fragment, memo } from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 import styled from 'styled-components'
 import { Layout } from '../../shared/components'
 
@@ -50,4 +49,4 @@ const Subtitle = styled.h2`
 HomePage.displayName = `HomePage`
 HomePageWrapper.displayName = `HomePageWrapper`
 
-export default HomePage
+export default memo(HomePage)

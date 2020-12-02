@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react'
+import React, { FC, Fragment, memo } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styled from 'styled-components'
@@ -36,4 +36,4 @@ const LoginPageWrapper = styled.div`
 LoginPage.displayName = `LoginPage`
 LoginPageWrapper.displayName = `LoginPageWrapper`
 
-export default LoginPage
+export default memo(LoginPage)

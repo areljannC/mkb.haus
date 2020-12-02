@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, memo } from 'react'
 import styled from 'styled-components'
 import { FOOTER_HEIGHT } from '../../constants'
 
@@ -20,4 +20,4 @@ const FooterWrapper = styled.footer`
 Footer.displayName = `Footer`
 FooterWrapper.displayName = `FooterWrapper`
 
-export default Footer
+export default memo(Footer)

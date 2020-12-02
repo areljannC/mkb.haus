@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, memo } from 'react'
 import styled from 'styled-components'
 import { HEADER_HEIGHT } from '../../constants'
 
@@ -20,4 +20,4 @@ const HeaderWrapper = styled.header`
 Header.displayName = `Header`
 HeaderWrapper.displayName = `HeaderWrapper`
 
-export default Header
+export default memo(Header)

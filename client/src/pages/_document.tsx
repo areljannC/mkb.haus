@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import ReactG from 'react'
 import Document from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
@@ -18,10 +18,10 @@ class CustomDocument extends Document {
       return {
         ...initialProps,
         styles: (
-          <Fragment>
+          <>
             {initialProps.styles}
             {sheet.getStyleElement()}
-          </Fragment>
+          </>
         )
       }
     } finally {

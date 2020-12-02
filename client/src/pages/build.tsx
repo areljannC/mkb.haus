@@ -1,5 +1,4 @@
-
-import React, { FC } from 'react'
+import React, { FC, memo } from 'react'
 import { BuildPage } from '../containers'
 
 // Component
@@ -10,4 +9,4 @@ const Build: FC = () => (
 // Display Names
 Build.displayName = `Build`
 
-export default Build
+export default memo(Build)

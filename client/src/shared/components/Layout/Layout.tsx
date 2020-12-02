@@ -1,4 +1,4 @@
-import React, { ReactNode, FC } from 'react'
+import React, { ReactNode, FC, memo } from 'react'
 import styled from 'styled-components'
 import { Header, Main, Footer } from './components'
 
@@ -32,4 +32,4 @@ const LayoutWrapper = styled.div`
 Layout.displayName = `Layout`
 LayoutWrapper.displayName = `LayoutWrapper`
 
-export default Layout
+export default memo<LayoutProps>(Layout)

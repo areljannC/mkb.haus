@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react'
+import React, { FC, useEffect, memo } from 'react'
 // import { LoginPage } from '../containers'
 import { useRouter } from 'next/router'
 import { pageRoutes } from '../shared/constants'
@@ -21,4 +21,4 @@ const Login: FC = () => {
 // Display Names
 Login.displayName = `Login`
 
-export default Login
+export default memo(Login)

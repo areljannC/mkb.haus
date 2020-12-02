@@ -1,4 +1,4 @@
-import React, { ReactNode, FC } from 'react'
+import React, { ReactNode, FC, memo } from 'react'
 import styled from 'styled-components'
 import { HEADER_HEIGHT } from '../../constants'
 
@@ -37,4 +37,4 @@ const MainWrapper = styled.main<MainWrapperProps>`
 Main.displayName = `Main`
 MainWrapper.displayName = `MainWrapper`
 
-export default Main
+export default memo<MainProps>(Main)
