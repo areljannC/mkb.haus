@@ -1,9 +1,9 @@
-import { kStringMaxLength } from 'buffer'
 import React, { FC, useState, memo } from 'react'
 import styled from 'styled-components'
 import { KeySwitches, KeyCaps, Layouts, PCBs } from './components'
 import { keySwitches, keyCaps, layouts, pcbs } from './data'
 import type { KeyboardType } from './types'
+import { Flex } from '../../../../shared/components'
 
 // Data
 const defaultKeyboard: KeyboardType = {
@@ -47,38 +47,18 @@ const Builder: FC = () => {
 
   return (
     <BuilderWrapper>
-      <div
-        style={{
-          width: '100%',
-          height: 'fit-content',
-          display: 'flex',
-          justifyContent: 'center',
-          alignContent: 'center'
-        }}
-      >
-        <KeySwitches
-          keySwitch={keyboard.keySwitch}
-          handleSetKeySwitch={handleSetKeySwitch}
-        />
+      <Flex height='fit-content' flexWrap='wrap'>
+        <KeySwitches keySwitch={keyboard.keySwitch} handleSetKeySwitch={handleSetKeySwitch} />
         <KeyCaps keyCap={keyboard.keyCap} handleSetKeyCap={handleSetKeyCap} />
         <Layouts layout={keyboard.layout} handleSetLayout={handleSetLayout} />
         <PCBs pcb={keyboard.pcb} handleSetPCB={handleSetPCB} />
-      </div>
-      <div
-        style={{
-          width: '100%',
-          height: 'auto',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignContent: 'center'
-        }}
-      >
+      </Flex>
+      <Flex height='fit-content' flexDirection='column'>
         <p>{keyboard.keySwitch.name}</p>
         <p>{keyboard.keyCap.name}</p>
         <p>{keyboard.layout.name}</p>
         <p>{keyboard.pcb.name}</p>
-      </div>
+      </Flex>
     </BuilderWrapper>
   )
 }
@@ -91,7 +71,7 @@ const BuilderWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.background};
 `
 
 // Display Names
