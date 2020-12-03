@@ -1,6 +1,7 @@
 const pageRoutes = {
   HOME: '/',
-  LOGIN: '/login'
+  LOGIN: '/login',
+  BUILD: '/build'
 }
 
 export default pageRoutes

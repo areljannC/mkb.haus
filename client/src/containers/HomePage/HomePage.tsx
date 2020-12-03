@@ -1,7 +1,9 @@
 import React, { FC, Fragment, memo } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import styled from 'styled-components'
 import { Layout } from '../../shared/components'
+import { pageRoutes } from '../../shared/constants'
 
 // Component
 const HomePage: FC = () => (
@@ -14,6 +16,10 @@ const HomePage: FC = () => (
         <Title>mkb.haus</Title>
         <Subtitle>
           A social network for mechanical keyboard enthusiasts coming soon.
+        </Subtitle>
+        <Subtitle>
+          Try the mechanical keyboard builder prototype{' '}
+          <Link href={pageRoutes.BUILD}>here</Link>.
         </Subtitle>
       </HomePageWrapper>
     </Layout>
