@@ -48,4 +48,4 @@ const PCBsWrapper = styled.div`
 PCBs.displayName = `PCBs`
 PCBsWrapper.displayName = `PCBsWrapper`
 
-export default memo<PCBType>(PCBs)
+export default memo<PCBsPropsType>(PCBs)
