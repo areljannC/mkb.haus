@@ -3,18 +3,18 @@ import styled from 'styled-components'
 import { Header, Main, Footer } from './components'
 
 // Types
-type LayoutProps = {
+type LayoutPropsType = {
   children?: ReactNode
   showHeader?: boolean
   showFooter?: boolean
 }
 
 // Component
-const Layout: FC<LayoutProps> = ({
+const Layout: FC<LayoutPropsType> = ({
   children,
   showHeader = true,
   showFooter = true
-}: LayoutProps) => (
+}: LayoutPropsType) => (
   <LayoutWrapper>
     {showHeader && <Header />}
     <Main showHeader={showHeader} showFooter={showFooter}>{children}</Main>
@@ -32,4 +32,4 @@ const LayoutWrapper = styled.div`
 Layout.displayName = `Layout`
 LayoutWrapper.displayName = `LayoutWrapper`
 
-export default memo<LayoutProps>(Layout)
+export default memo<LayoutPropsType>(Layout)

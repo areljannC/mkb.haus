@@ -13,7 +13,7 @@ const Header: FC = () => (
 const HeaderWrapper = styled.header`
   width: 100%;
   height: ${HEADER_HEIGHT};
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary};
 `
 
 // Display Names

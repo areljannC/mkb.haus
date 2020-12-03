@@ -13,7 +13,7 @@ const Footer: FC = () => (
 const FooterWrapper = styled.footer`
   width: 100%;
   height: ${FOOTER_HEIGHT};
-  background-color: ${props => props.theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.secondary};
 `
 
 // Display Names
