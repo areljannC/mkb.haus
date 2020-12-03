@@ -1,0 +1,1 @@
+export const IMAGE_150x150 = 'https://via.placeholder.com/150'
