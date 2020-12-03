@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react'
+import { FC, useEffect, memo } from 'react'
 import { useRouter } from 'next/router'
 import { pageRoutes } from '../shared/constants'
 
@@ -16,4 +16,4 @@ const PageNotFound: FC = () => {
 // Display Names
 PageNotFound.displayName = `PageNotFound`
 
-export default PageNotFound
+export default memo(PageNotFound)

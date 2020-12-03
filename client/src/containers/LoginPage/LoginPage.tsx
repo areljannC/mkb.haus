@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react'
+import React, { FC, Fragment, memo } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import styled from 'styled-components'
@@ -29,11 +29,11 @@ const LoginPageWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
 `
 
 // Display Names
 LoginPage.displayName = `LoginPage`
 LoginPageWrapper.displayName = `LoginPageWrapper`
 
-export default LoginPage
+export default memo(LoginPage)

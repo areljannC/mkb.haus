@@ -1,4 +1,4 @@
-import React, { FC, Fragment } from 'react'
+import React, { FC, Fragment, memo } from 'react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
@@ -43,4 +43,4 @@ const GlobalStyle = createGlobalStyle`
 // Display Names
 App.displayName = `App`
 
-export default App
+export default memo<AppProps>(App)

@@ -1,40 +1,37 @@
 import React, { FC, Fragment, memo } from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 import styled from 'styled-components'
 import { Layout } from '../../shared/components'
-import { pageRoutes } from '../../shared/constants'
+import { Builder } from './components'
 
 // Component
-const HomePage: FC = () => (
+const BuildPage: FC = () => (
   <Fragment>
     <Head>
-      <title>mkb.haus</title>
+      <title>Build</title>
     </Head>
     <Layout showHeader={false} showFooter={false}>
-      <HomePageWrapper>
-        <Title>mkb.haus</Title>
+      <BuildPageWrapper>
+        <Title>Mechanical Keyboard Builder</Title>
         <Subtitle>
-          A social network for mechanical keyboard enthusiasts coming soon.
+          Build your mechanical keyboard.
         </Subtitle>
-        <Subtitle>
-          Try the mechanical keyboard builder prototype{' '}
-          <Link href={pageRoutes.BUILD}>here</Link>.
-        </Subtitle>
-      </HomePageWrapper>
+        <Builder />
+      </BuildPageWrapper>
     </Layout>
   </Fragment>
 )
 
 // Styles
-const HomePageWrapper = styled.div`
+const BuildPageWrapper = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   background-color: ${({ theme }) => theme.colors.background};
+  text-align: center;
 `
 
 const Title = styled.h1`
@@ -52,7 +49,7 @@ const Subtitle = styled.h2`
 `
 
 // Display Names
-HomePage.displayName = `HomePage`
-HomePageWrapper.displayName = `HomePageWrapper`
+BuildPage.displayName = `BuildPage`
+BuildPageWrapper.displayName = `BuildPageWrapper`
 
-export default memo(HomePage)
+export default memo(BuildPage)
