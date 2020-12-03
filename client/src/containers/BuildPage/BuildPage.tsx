@@ -30,21 +30,21 @@ const BuildPageWrapper = styled.div`
   flex-direction: column;
   /* justify-content: center; */
   /* align-items: center; */
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
   text-align: center;
 `
 
 const Title = styled.h1`
-  color: ${(props) => props.theme.colors.text};
-  font-size: ${(props) => props.theme.styles.h1.fontSize};
-  font-weight: ${(props) => props.theme.styles.h1.fontSize};
-  margin-bottom: ${(props) => props.theme.space[3]};
+  color: ${({ theme }) => theme.colors.text};
+  font-size: ${({ theme }) => theme.styles.h1.fontSize};
+  font-weight: ${({ theme }) => theme.styles.h1.fontSize};
+  margin-bottom: ${({ theme }) => theme.space[3]};
 `
 
 const Subtitle = styled.h2`
-  color: ${(props) => props.theme.colors.text};
-  font-size: ${(props) => props.theme.styles.h2.fontSize};
-  font-weight: ${(props) => props.theme.styles.h2.fontSize};
+  color: ${({ theme }) => theme.colors.text};
+  font-size: ${({ theme }) => theme.styles.h2.fontSize};
+  font-weight: ${({ theme }) => theme.styles.h2.fontSize};
   text-align: center;
 `
 

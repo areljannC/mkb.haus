@@ -1,6 +1,6 @@
 import React, { FC, memo } from 'react'
 import styled from 'styled-components'
-import { KeySwitches, KeyCaps, KeyboardLayout, PCBs } from './components'
+import { KeySwitches, KeyCaps, Layouts, PCBs } from './components'
 
 // Component
 const Builder: FC = () => {
@@ -8,7 +8,7 @@ const Builder: FC = () => {
     <BuilderWrapper>
       <KeySwitches />
       <KeyCaps />
-      <KeyboardLayout />
+      <Layouts />
       <PCBs />
     </BuilderWrapper>
   )
@@ -19,8 +19,9 @@ const BuilderWrapper = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  background-color: ${(props) => props.theme.colors.primary};
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.primary};
 `
 
 // Display Names

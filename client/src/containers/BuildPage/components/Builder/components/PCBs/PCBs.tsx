@@ -1,14 +1,16 @@
 import React, { FC, useState, memo } from 'react'
 import styled from 'styled-components'
+import { Card, CardImage, CardBody } from '../../../../../../shared/components'
+import { IMAGE_150x150 } from '../../../../../../shared/constants'
 
 // Types
-type PCB = {
+type PCBType = {
   id: number
   name: string
 }
 
 // Data
-const pcbs: PCB[] = [
+const pcbs: PCBType[] = [
   {
     id: 0,
     name: 'Gothik 70s'
@@ -21,44 +23,44 @@ const pcbs: PCB[] = [
 
 // Component
 const PCBs: FC = () => {
-  const [
-    selectedPCBID,
-    setSelectedPCBID
-  ] = useState<number>(pcbs[0].id)
+  const [selectedPCBID, setSelectedPCBID] = useState<number>(pcbs[0].id)
   return (
     <PCBsWrapper>
-      <p>Select PCB:</p>
-      <select
-        value={
-          pcbs[
-            pcbs.findIndex(
-              (pcb) => pcb.id === selectedPCBID
-            )
-          ].id
-        }
-        onChange={(event) =>
-          setSelectedPCBID(parseInt(event.target.value, 10))
-        }
-      >
-        {pcbs.map((pcb) => (
-          <option
-            value={pcb.id}
-            selected={pcb.id === selectedPCBID}
+      <Card>
+        <CardImage src={IMAGE_150x150} />
+        <CardBody>
+          <p>Select PCB:</p>
+          <select
+            value={pcbs[pcbs.findIndex((pcb) => pcb.id === selectedPCBID)].id}
+            onChange={(event) =>
+              setSelectedPCBID(parseInt(event.target.value, 10))
+            }
           >
-            {pcb.name}
-          </option>
-        ))}
-      </select>
+            {pcbs.map((pcb) => (
+              <option
+                key={pcb.id}
+                value={pcb.id}
+                selected={pcb.id === selectedPCBID}
+              >
+                {pcb.name}
+              </option>
+            ))}
+          </select>
+        </CardBody>
+      </Card>
     </PCBsWrapper>
   )
 }
 
 // Styles
 const PCBsWrapper = styled.div`
-  width: 100%;
+  width: fit-content;
   height: fit-content;
   display: flex;
-  background-color: ${(props) => props.theme.colors.primary};
+  margin-right: ${({ theme }) => theme.space[2]};
+  margin-bottom: ${({ theme }) => theme.space[2]};
+  margin-left: ${({ theme }) => theme.space[2]};
+  background-color: ${({ theme }) => theme.colors.primary};
 `
 
 // Display Names

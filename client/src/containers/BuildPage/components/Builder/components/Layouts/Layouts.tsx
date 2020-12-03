@@ -4,63 +4,82 @@ import { Card, CardImage, CardBody } from '../../../../../../shared/components'
 import { IMAGE_150x150 } from '../../../../../../shared/constants'
 
 // Types
-type KeyCapType = {
+type LayoutType = {
   id: number
   name: string
 }
 
 // Data
-const keyCaps: KeyCapType[] = [
+const layouts: LayoutType[] = [
   {
     id: 0,
-    name: 'Rzez Red River GMK'
+    name: '100%'
   },
   {
     id: 1,
-    name: 'Kyrk Kobain Puddings'
+    name: '80%'
+  },
+  {
+    id: 2,
+    name: '75%'
+  },
+  {
+    id: 3,
+    name: '70%'
+  },
+  {
+    id: 4,
+    name: '65%'
+  },
+  {
+    id: 5,
+    name: '60%'
+  },
+  {
+    id: 6,
+    name: '50%'
   }
 ]
 
 // Component
-const KeyCaps: FC = () => {
-  const [selectedKeyCapID, setSelectedKeyCapID] = useState<number>(
-    keyCaps[0].id
+const Layouts: FC = () => {
+  const [selectedLayoutID, setSelectedLayoutID] = useState<number>(
+    layouts[0].id
   )
-
   return (
-    <KeyCapsWrapper>
+    <LayoutsWrapper>
       <Card>
         <CardImage src={IMAGE_150x150} />
         <CardBody>
-          <p>Select key caps:</p>
+          <p>Select layout:</p>
           <select
             value={
-              keyCaps[
-                keyCaps.findIndex((keyCap) => keyCap.id === selectedKeyCapID)
+              layouts[
+                layouts.findIndex((layout) => layout.id === selectedLayoutID)
               ].id
             }
             onChange={(event) =>
-              setSelectedKeyCapID(parseInt(event.target.value, 10))
+              setSelectedLayoutID(parseInt(event.target.value, 10))
             }
           >
-            {keyCaps.map((keyCap) => (
+            {layouts.map((layout) => (
               <option
-                key={keyCap.id}
-                value={keyCap.id}
-                selected={keyCap.id === selectedKeyCapID}
+                key={layout.id}
+                value={layout.id}
+                selected={layout.id === selectedLayoutID}
               >
-                {keyCap.name}
+                {layout.name}
               </option>
             ))}
           </select>
         </CardBody>
       </Card>
-    </KeyCapsWrapper>
+    </LayoutsWrapper>
   )
 }
 
 // Styles
-const KeyCapsWrapper = styled.div`
+const LayoutsWrapper = styled.div`
   width: fit-content;
   height: fit-content;
   display: flex;
@@ -71,7 +90,7 @@ const KeyCapsWrapper = styled.div`
 `
 
 // Display Names
-KeyCaps.displayName = `KeyCaps`
-KeyCapsWrapper.displayName = `KeyCapsWrapper`
+Layouts.displayName = `Layouts`
+LayoutsWrapper.displayName = `LayoutsWrapper`
 
-export default memo(KeyCaps)
+export default memo(Layouts)

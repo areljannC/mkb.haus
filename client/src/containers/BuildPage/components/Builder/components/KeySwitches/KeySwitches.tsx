@@ -1,14 +1,16 @@
 import React, { FC, useState, memo } from 'react'
 import styled from 'styled-components'
+import { Card, CardImage, CardBody } from '../../../../../../shared/components'
+import { IMAGE_150x150 } from '../../../../../../shared/constants'
 
 // Types
-type KeySwitch = {
+type KeySwitchType = {
   id: number
   name: string
 }
 
 // Data
-const keySwitches: KeySwitch[] = [
+const keySwitches: KeySwitchType[] = [
   {
     id: 0,
     name: 'Cherry MX Blue'
@@ -51,38 +53,48 @@ const KeySwitches: FC = () => {
 
   return (
     <KeySwitchesWrapper>
-      <p>Select key switch:</p>
-      <select
-        value={
-          keySwitches[
-            keySwitches.findIndex(
-              (keySwitch) => keySwitch.id === selectedKeySwitchID
-            )
-          ].id
-        }
-        onChange={(event) =>
-          setSelectedKeySwitchID(parseInt(event.target.value, 10))
-        }
-      >
-        {keySwitches.map((keySwitch) => (
-          <option
-            value={keySwitch.id}
-            selected={keySwitch.id === selectedKeySwitchID}
+      <Card>
+        <CardImage src={IMAGE_150x150} />
+        <CardBody>
+          <p>Select key switch:</p>
+          <select
+            value={
+              keySwitches[
+                keySwitches.findIndex(
+                  (keySwitch) => keySwitch.id === selectedKeySwitchID
+                )
+              ].id
+            }
+            onChange={(event) =>
+              setSelectedKeySwitchID(parseInt(event.target.value, 10))
+            }
           >
-            {keySwitch.name}
-          </option>
-        ))}
-      </select>
+            {keySwitches.map((keySwitch) => (
+              <option
+                key={keySwitch.id}
+                value={keySwitch.id}
+                selected={keySwitch.id === selectedKeySwitchID}
+              >
+                {keySwitch.name}
+              </option>
+            ))}
+          </select>
+        </CardBody>
+      </Card>
     </KeySwitchesWrapper>
   )
 }
 
 // Styles
 const KeySwitchesWrapper = styled.div`
-  width: 100%;
+  width: fit-content;
   height: fit-content;
   display: flex;
-  background-color: ${(props) => props.theme.colors.primary};
+  justify-content: center;
+  margin-right: ${({ theme }) => theme.space[2]};
+  margin-bottom: ${({ theme }) => theme.space[2]};
+  margin-left: ${({ theme }) => theme.space[2]};
+  background-color: ${({ theme }) => theme.colors.primary};
 `
 
 // Display Names

@@ -1,4 +1,4 @@
 export { KeySwitches } from './KeySwitches'
 export { KeyCaps } from './KeyCaps'
-export { KeyboardLayout } from './KeyboardLayout'
+export { Layouts } from './Layouts'
 export { PCBs } from './PCBs'
