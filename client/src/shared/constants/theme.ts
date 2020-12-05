@@ -5,30 +5,10 @@ const heading = {
   fontWeight: 'heading'
 }
 
-const fontSizes = [
-  '12px',
-  '14px',
-  '16px',
-  '20px',
-  '24px',
-  '32px',
-  '48px',
-  '64px',
-  '96px'
-]
+const fontSizes = ['12px', '14px', '16px', '20px', '24px', '32px', '48px', '64px', '96px']
 
 const theme = {
-  space: [
-    '0px',
-    '4px',
-    '8px',
-    '16px',
-    '32px',
-    '64px',
-    '128px',
-    '256px',
-    '512px'
-  ],
+  space: ['0px', '4px', '8px', '16px', '32px', '64px', '128px', '256px', '512px'],
   fonts: {
     body: `'Lato', sans-serif`,
     heading: `'Lato', sans-serif`,
@@ -112,25 +92,14 @@ const theme = {
     }
   },
   colors: {
-    text: '#454f5b',
-    background: '#fff',
-    primary: '#5c6ac4',
-    secondary: '#006fbb',
-    highlight: '#47c1bf',
-    muted: '#e6e6e6',
-    gray: '#dfe3e8',
-    accent: '#f49342',
-    darken: '#00044c',
-    modes: {
-      dark: {
-        text: '#3e4155',
-        background: '#000639',
-        primary: '#9c6ade',
-        secondary: '#b4e1fa',
-        highlight: '#b7ecec',
-        muted: '#e6e6e6'
-      }
-    }
+    text: 'hsl(210, 50%, 96%)',
+    background: 'hsl(230, 25%, 18%)',
+    primary: 'hsl(260, 100%, 80%)',
+    secondary: 'hsl(290, 100%, 80%)',
+    highlight: 'hsl(260, 20%, 40%)',
+    purple: 'hsl(290, 100%, 80%)',
+    muted: 'hsla(230, 20%, 0%, 20%)',
+    gray: 'hsl(210, 50%, 60%)'
   }
 }
 
