@@ -115,20 +115,9 @@ declare module 'styled-components' {
       primary: string
       secondary: string
       highlight: string
+      purple: string
       muted: string
       gray: string
-      accent: string
-      darken: string
-      modes: {
-        dark: {
-          text: string
-          background: string
-          primary: string
-          secondary: string
-          highlight: string
-          muted: string
-        }
-      }
     }
   }
 }
