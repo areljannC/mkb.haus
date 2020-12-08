@@ -7,7 +7,9 @@ export type KeyboardType = {
 
 export type KeySwitchType = {
   id: number
-  name: string
+  name: string,
+  type: string,
+  accentuationForce: string
 }
 
 export type KeyCapType = {
